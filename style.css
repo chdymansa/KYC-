@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.radios{
+    font-size: 20px;
+    text-align: center;
+    margin: 50px 0px;
+    color: rgb(62, 62, 109);
+}
+.radio {
+    border: 0px;
+    width: 2%;
+    height: 0.7em;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    
+}
+.radio1{
+    border: 0px;
+    width: 2%;
+    height: 0.9em;
+    font-size: 20px;
+    padding-right: 0;
+}
+
+.padding{
+    padding-left: 202px !important;
+}
+.img{
+    margin-left: 215px !important;
+}
+.img1{
+    margin-left: 200px;
+}
+.ward{
+   padding-left: 184px;
+}
+p{
+    display: block;
+}
+.error {
+    color: red;
+    font-style: initial;
+
+
+}
+
+.bs-example {
+    margin: 20px;
+}
+h6{
+   cursor: pointer;
+}
+#blah{
+    border: none;
+}
+.left123{
+    display: flex;
+}
+.right123{
+    display: flex;
+}
+span{
+    color: red;
+}
+#para{
+    background-color: rgb(127, 174, 206);
+    display: flex;
+    margin: 15px 0px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}

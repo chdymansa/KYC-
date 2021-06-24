@@ -1,0 +1,151 @@
+[{
+    "id":"1",
+    "name":"Province 1",
+    "parent_id":"0"
+
+},
+{
+    "id":"2",
+    "name":"Province 2",
+    "parent_id":"0"
+
+},
+
+{
+    "id":"3",
+    "name":"Bagmati Province",
+    "parent_id":"0"
+
+},
+{
+    "id":"4",
+    "name":"Gandaki Province",
+    "parent_id":"0"
+
+},
+
+{
+    "id":"5",
+    "name":"Lumbini Province",
+    "parent_id":"0"
+
+},
+{
+    "id":"6",
+    "name":"Karnali Province",
+    "parent_id":"0"
+
+},
+{
+    "id":"7",
+    "name":"Sudurpaschim Province",
+    "parent_id":"0"
+
+},
+{
+    "id":"8",
+    "name":"morang",
+    "parent_id":"1"
+}, 
+{
+    "id":"9",
+    "name":"taplejung",
+    "parent_id":"1"
+},
+{
+    "id":"10",
+    "name":"morang",
+    "parent_id":"1"
+},
+{
+    "id":"11",
+    "name":"bara",
+    "parent_id":"2"
+},
+{
+    "id":"12",
+    "name":"parsa",
+    "parent_id":"2"
+},
+{
+    "id":"13",
+    "name":"sarlahi",
+    "parent_id":"2"
+},
+{
+    "id":"14",
+    "name":"Chitwan",
+    "parent_id":"3"
+},
+{
+    "id":"15",
+    "name":"Dhading",
+    "parent_id":"3"
+},
+{
+    "id":"16",
+    "name":"Nuwakot",
+    "parent_id":"3"
+},
+{
+    "id":"17",
+    "name":"Baglung",
+    "parent_id":"4"
+},
+{
+    "id":"18",
+    "name":"Besisahar",
+    "parent_id":"4"
+},
+{
+    "id":"19",
+    "name":"pokhara",
+    "parent_id":"4"
+},
+
+
+{
+    "id":"20",
+    "name":"Bardiya",
+    "parent_id":"5"
+},
+{
+    "id":"21",
+    "name":"Banke",
+    "parent_id":"5"
+},
+{
+    "id":"22",
+    "name":"Rolpa",
+    "parent_id":"5"
+},
+{
+    "id":"23",
+    "name":"Jumla",
+    "parent_id":"6"
+},
+{
+    "id":"24",
+    "name":"Humla",
+    "parent_id":"6"
+},
+{
+    "id":"25",
+    "name":"Dailekh",
+    "parent_id":"6"
+},
+{
+    "id":"26",
+    "name":"Kailali",
+    "parent_id":"7"
+},
+{
+    "id":"27",
+    "name":"Darchula",
+    "parent_id":"7"
+},{
+    "id":"28",
+    "name":"Doti",
+    "parent_id":"7"
+}
+]

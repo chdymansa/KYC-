@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <!-- nepali date picker css link -->
+    <link href="http://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/css/nepali.datepicker.v3.5.min.css"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="jquery-ui.min.css">
+
+    <!-- icon plugin -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>KYC form</title>
+</head>
+
+<body>
+    <div class="container my-2">
+        <form action="" id="registerform" autocomplete="off">
+            <div class="radios text-primary ">
+                <label for="yes_no_radio"> Do you have any account with other Bank/Financial Institution?</label><br>
+                <input type="radio" name="yes_no" id="no" checked class="radio" value="no">No </input> /
+                <input type="radio" name="yes_no" id="yes" class="radio" value="yes">Yes</input>
+                <hr class="bg-dark my-0">
+            </div>
+            <div id="para" style="display: none;" class="text-center">
+                As per NRB Directive Section no. 16.17 “A natural person cannot open more than one account of same
+                nature ." <br>
+                बैंक वा वित्तीय संस्थाले प्राकृतिक व्यक्तिको नाममा स्वदेशी मुद्रामा एउटै प्रकृतिको एक भन्दा बढी खाता
+                खोल्न पाइने छैन |
+            </div>
+
+            <div class="box">
+
+                <div class="border px-2 my-4 ">
+                    <h3>Salutation <span>*</span></h3> <br>
+
+                    <input type="radio" id="male" name="gender" value="male" class="radio1" checked>
+                    <label for="male">Mr.</label>
+                    <input type="radio" id="female" name="gender" value="female" class="radio1">
+                    <label for="female">Mrs.</label>
+                    <input type="radio" id="other" name="gender" value="other" class="radio1">
+                    <label for="other">M/S</label>
+                    <input type="radio" id="other" name="gender" value="other" class="radio1">
+                    <label for="other">Miss</label>
+
+                </div>
+                <div class="border">
+                    <div class="bs-example">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h6 class="mb-0 " data-target="#collapseOne" data-toggle="collapse">
+                                        Account Details Here..
+                                    </h6>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class=" row">
+                                            <div class=" col-4 my-2">
+                                                <label for="firstname">First Name<span>*</span></label>
+                                                <input type="text" name="firstname" id="firstname" class="form-control">
+                                            </div>
+                                            <div class="col-4 my-2">
+                                                <label for="middlename">Middle Name</label>
+                                                <input type="text" name="middlename" id="middlename"
+                                                    class="form-control ">
+                                            </div>
+                                            <div class="col-4 my-2">
+                                                <label for="lastname">Last Name<span>*</span></label>
+                                                <input type="text" name="lastname" id="lastname" class="form-control ">
+                                            </div>
+                                        </div>
+
+                                        <div class=" row">
+                                            <div class="col-4 my-2">
+                                                <label for="email">Email<span>*</span></label>
+                                                <input type="text" name="email" id="email" class="form-control  "
+                                                    placeholder="abc@mail.com">
+                                            </div>
+                                            <div class="col-4 my-2">
+                                                <label for="phone">Mobile No.<span>*</span></label>
+                                                <input type="text" name="mobile" id="phone" class="form-control">
+                                            </div>
+                                            <div class="col-4 my-2">
+                                                <label for="telephones">Telephone No.</label>
+                                                <input type="text" name="telephone" id="telephones"
+                                                    class="form-control ">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-4 my-2">
+                                                <label for="bs">Date of Birth(B.S)<span>*</span></label>
+                                                <input type="datetime" id="bs" class="form-control nepaliDate "
+                                                    data-ndpenglishinput="#ad" data-val="true" name="bs" value="" />
+                                            </div>
+
+                                            <div class="col-4 my-2">
+                                                <label for="ad">Date of Birth(A.D)<span>*</span></label>
+                                                <input type="datetime" class="form-control englishDate datepicker"
+                                                    data-target="#bs" data-val="true" id="ad" name="ad" value="" />
+                                            </div>
+                                            <div class="col-4 my-2">
+                                                <label for="nationality">Nationality<span>*</span></label>
+                                                <input type="text" name="national" id="nationality"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-6 my-2">
+                                                <label for="socialnetwork">Social Network</label>
+                                                <select name="socialnet" id="socialnetwork"
+                                                    class="form-control required">
+                                                    <option value="">Select one...</option>
+                                                    <option value="Facebook">Facebook</option>
+                                                    <option value="Instagram">Instagram</option>
+                                                    <option value="Twitter">Twitter</option>
+                                                    <option value="Skype">Skype</option>
+                                                    <option value="Viber">Viber</option>
+                                                    <option value="WhatsApp">WhatsApp</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6 my-2">
+                                                <label for="networkid">Social Network Id</label>
+                                                <input type="text" class="form-control" id="networkid">
+                                            </div>
+                                        </div>
+
+                                        <div class="my-4">
+                                            <p>Family Information<span>*</span></p><br>
+                                            <div class="row">
+                                                <div class="col-3 my-2 ">
+                                                    <label for="grand">Grandfather's Name<span>*</span></label>
+                                                    <input type="text" name="grandfather" id="grand"
+                                                        class="form-control">
+                                                </div>
+                                                <div class="col-3 my-2">
+                                                    <label for="nationality">Grandfather's Nationality</label>
+                                                    <input type="text" name="national" id="nationality"
+                                                        class="form-control">
+                                                </div>
+
+                                                <div class="col-3 my-2 ">
+                                                    <label for="fathers">Father's Name<span>*</span></label>
+                                                    <input type="text" name="father" id="fathers" class="form-control">
+                                                </div>
+                                                <div class="col-3 my-2">
+                                                    <label for="nationality">Father's Nationality</label>
+                                                    <input type="text" name="national" id="nationality"
+                                                        class="form-control">
+                                                </div>
+                                                <div class="col-3 my-2 ">
+                                                    <label for="mothers">Mother's Name<span>*</span></label>
+                                                    <input type="text" name="mother" id="mothers" class="form-control">
+                                                </div>
+                                                <div class="col-3 my-2">
+                                                    <label for="nationality">Mother's Nationality</label>
+                                                    <input type="text" name="national" id="nationality"
+                                                        class="form-control">
+                                                </div>
+                                                <div class="col-3 my-2 ">
+                                                    <label for="spouse">Spouse's Name</label>
+                                                    <input type="text" name="spouse" id="spouses" class="form-control">
+                                                </div>
+                                                <div class="col-3 my-2">
+                                                    <label for="nationality">Spouse's Nationality</label>
+                                                    <input type="text" name="national" id="nationality"
+                                                        class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h6 class="mb-0" data-target="#collapseTwo" data-toggle="collapse">
+
+                                        Address Details Here..
+                                    </h6>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div>
+                                            <p>Permanent Address<span>*</span></p>
+                                            <div class="row">
+                                                <div class="col-4 my-4">
+                                                    <label for="province">Select Province <span>*</span></label>
+                                                    <select name="province" id="province" class="form-control required">
+                                                        <option value="">Select one</option>
+
+
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-4 my-4">
+                                                    <label for="district"> Select District<span>*</span></label>
+                                                    <select name="district" id="district"
+                                                        class="form-control required ">
+                                                        <option value="">Select one</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-4 my-4">
+                                                    <label for="vdc">VDC/MC<span>*</span></label>
+                                                    <input type="text" name="vdc" id="vdc" class="form-control ">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row ">
+                                            <div class="col-4  my-4">
+                                                <label for="ward">Ward Number <span>*</span></label>
+                                                <input type="text" name="wardno" id="ward" class="form-control">
+                                            </div>
+                                            <div class="col-4 my-4">
+                                                <label for="street">Street <span>*</span></label>
+                                                <input type="text" name="street" id="street" class="form-control">
+                                            </div>
+                                            <div class="col-4 my-4">
+                                                <label for="house">House Number</label>
+                                                <input type="text" name="houseno" id="house" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <p>Current Address<span>*</span></p>
+                                            <div class="row">
+                                                <div class="col-4 my-4">
+
+                                                    <label for="province1">Select Province<span>*</span></label>
+                                                    <select name="province1" id="province1"
+                                                        class="form-control required">
+                                                        <option value="">Select one...</option>
+
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-4 my-4">
+                                                    <label for="district1"> Select District<span>*</span></label>
+                                                    <select name="district1" id="district1"
+                                                        class="form-control required ">
+                                                        <option value="">Select one..</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-4 my-4">
+                                                    <label for="vdc/mc">VDC/MC<span>*</span></label>
+                                                    <input type="text" name="vdc1" id="vdc/mc" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row ">
+                                            <div class="col-4 my-4">
+                                                <label for="wards">Ward Number<span>*</span></label>
+                                                <input type="text" name="wardno1" id="wards" class="form-control ">
+                                            </div>
+                                            <div class="col-4 my-4">
+                                                <label for="streets">Street<span>*</span></label>
+                                                <input type="text" name="street1" id="streets" class="form-control">
+                                            </div>
+                                            <div class="col-4 my-4">
+                                                <label for="hno">House Number</label>
+                                                <input type="text" name="houseno1" id="hno" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h6 class="mb-0" data-toggle="collapse" data-target="#collapseThree">
+                                        Document Details Here..
+
+                                    </h6>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="my-4 radioss">
+                                            <span class="my-4 mx-2 py-2 text-dark"><b>Document<span>*</span></b></span>
+                                            <input type="radio" id="males" name="radio2" value="males"
+                                                class="radio1 mx-2" checked="checked">
+                                            <label for="males">Citizenship</label>
+                                            <input type="radio" id="females" name="radio2" value="females"
+                                                class="radio1 mx-2">
+                                            <label for="females">Passport</label>
+                                            <input type="radio" id="others" name="radio2" value="others"
+                                                class="radio1 mx-2">
+                                            <label for="others">Voter ID</label>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-4 my-2 expire">
+                                                <label for="citizen">Citizenship/valid passport
+                                                    No.<span>*</span></label>
+                                                <input type="text" name="cno" id="citizen" class="form-control ">
+                                            </div>
+                                            <div class="col-4 my-2 expire">
+                                                <label for="placeissue">Select Place of Issue<span>*</span></label>
+                                                <select name="places" id="placeissue" class="form-control required">
+                                                    <option value="">Select one...</option>
+                                                    <option value="Kathmandu">Kathmandu</option>
+                                                    <option value="Butwal">Butwal</option>
+                                                    <option value="Chitwan">Chitwan</option>
+                                                    <option value="Hetauda">Hetauda</option>
+                                                    <option value="Bhaktapur">Bhaktapur</option>
+
+                                                </select>
+                                            </div>
+
+                                            <div class="col-4 my-2 expire">
+                                                <label for="authority">Issuing Authority<span>*</span></label>
+                                                <input type="text" name="iauthority" id="authority"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="row ">
+                                            <div class="col-3 my-4">
+                                                <label for="ad1">Date of Issue(A.D)<span>*</span></label>
+                                                <input type="datetime" class="form-control englishDate datepicker"
+                                                    data-target="#bs1" data-val="true" id="ad1" name="ad1" value="" />
+
+                                                <label for="bs1">Date of Issue(B.S)<span>*</span></label>
+                                                <input type="datetime" id="bs1" class="form-control nepaliDate "
+                                                    data-ndpenglishinput="#ad1" data-val="true" name="bs1" value="" />
+                                            </div>
+                                            <div class="col-3 my-4 expire" style="display: none;">
+                                                <label for="ad2">ID Expiry Date(A.D)<span>*</span></label>
+                                                <input type="datetime" class="form-control englishDate datepicker"
+                                                    data-target="#bs2" data-val="true" id="ad2" name="ad2" value="" />
+
+                                                <label for="bs2">ID Expiry Date(B.S)<span>*</span></label>
+                                                <input type="datetime" id="bs2" class="form-control nepaliDate "
+                                                    data-ndpenglishinput="#ad2" data-val="true" name="bs2" value="" />
+                                            </div>
+                                            <div class="col-3 my-4 expire" style="display: none;">
+                                                <label for="ad3">Passport issue (for foreigner)<span>*</span></label>
+                                                <input type="datetime" class="form-control englishDate datepicker"
+                                                    data-target="#bs3" data-val="true" id="ad3" name="ad3" value="" />
+
+                                                <label for="bs3">Passport issue Date(B.S)<span>*</span></label>
+                                                <input type="datetime" id="bs3" class="form-control nepaliDate "
+                                                    data-ndpenglishinput="#ad3" data-val="true" name="bs3" value="" />
+                                            </div>
+                                            <div class="col-3 my-4 expire" style="display: none;">
+                                                <label for="ad4">Passport Expiry (for foreigner)<span>*</span></label>
+                                                <input type="datetime" class="form-control englishDate datepicker"
+                                                    data-target="#bs4" data-val="true" id="ad4" name="ad4" value="" />
+
+                                                <label for="bs4">Passport Expiry Date(B.S)<span>*</span></label>
+                                                <input type="datetime" id="bs4" class="form-control nepaliDate "
+                                                    data-ndpenglishinput="#ad4" data-val="true" name="bs4" value="" />
+                                            </div>
+                                            <div class="col-3 my-4 navigationButtonTop" style="display: none;">
+                                                <label for="votersid">Voters ID.<span>*</span></label>
+                                                <input type="text" id="votersid" class="form-control" name="ad4">
+
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="font-weight-bold">Upload Document<span>*</span></p>
+                                            <div class="row">
+                                                <div class="col-6 my-4">
+                                                    i. Citizenship/ Passport / Voter's ID</div>
+                                                <div class="left123 col-6 my-4 ">
+
+
+                                                    <div>
+                                                        <input type="file" class="previewB4Upload"
+                                                            data-target="#target">
+                                                    </div>
+
+
+                                                    <div id="target">
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-6  my-4">ii. Passport Size Photograph </div>
+                                                <div class="right123 col-6 my-4">
+                                                    <div>
+                                                        <input type="file" class="previewB4Upload1"
+                                                            data-target="#target1">
+                                                    </div>
+
+                                                    <div id="target1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mx-2 py-2 px-4 my-4">Submit</button>
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+
+
+
+    <!-- english date picker  -->
+
+    <script src="jquery-ui.min.js"></script>
+
+
+
+    <!-- nepali date picker and date of birth dependency -->
+    <script src="nepali.datepicker.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.datepicker').datepicker({ dateFormat: 'yy-mm-dd' });
+            $('.datepicker').on('change', function (e) {
+                console.log('check ', $(this).val());
+                $($(this).data('target')).val(AD2BS($(this).val()));
+
+            });
+            $('.nepaliDate').nepaliDatePicker({
+                npdMonth: true,
+                npdYear: true,
+                scroll: true,
+                npdYearCount: 70,
+                ndpEnglishInput: 'englishDate'
+            });
+
+
+            // hide  expiry date and viss in citizenship
+            $('input[id="males"]').change(function () {
+                if ($(this).val() == 'males') {
+                    $(".expire").hide();
+                } else {
+                    $(".expire").show();
+                }
+            });
+            // hide  expiry date and viss in voters
+            $('input[name="radio2"]').change(function () {
+                if ($(this).val() == 'others') {
+                    $(".expire").hide();
+                    $(".navigationButtonTop").show();
+                } else {
+                    $(".expire").show();
+                    $(".navigationButtonTop").hide();
+                }
+            });
+
+
+
+            // yes/ no hide 
+            $('input[name="yes_no"]').change(function () {
+                if ($(this).val() == 'yes') {
+                    $(".box").hide();
+                    $("#para").show();
+
+                } else if ($(this).val() == 'no') {
+                    $(".box").show();
+                    $("#para").hide();
+
+                }
+            });
+
+
+
+        });
+    </script>
+
+    <!-- Jquery Form Validator -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js"
+        integrity="sha512-6Uv+497AWTmj/6V14BsQioPrm3kgwmK9HYIyWP+vClykX52b0zrDGP7lajZoIY1nNlX4oQuh7zsGjmF7D0VZYA=="
+        crossorigin="anonymous"></script>
+
+    <script src="JS/index.js"></script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
